@@ -1,1 +1,14 @@
-"hello"
+<h2>My Favorite Restaurants</h2>
+
+<div id='restaurant-list'>
+  <% @restaurants.each do |restaurant| %>
+    <div id="restaurant<%=restaurant.id%>">
+     <h3><a href="/restaurant/<%= restaurant.id%>"><%= restaurant.name %></a><div class="restaurantinfo"></div></h3>
+    </div>
+  <% end %>
+</div>
+
+<div id='form-creation'>
+<h3><a id="new-restaurant" href="/restaurant/new">Add a new restaurant here</a>
+</h3>
+</div>
