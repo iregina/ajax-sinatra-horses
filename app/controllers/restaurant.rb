@@ -30,3 +30,12 @@ post '/restaurants' do
     end
   end
 end
+
+get '/restaurants/:id' do
+  @restaurant = Restaurant.find(params[:id])
+   if request.xhr?
+    erb :"/restaurants/_show", layout: false, locals: {restaurant: @restaurant}
+  else
+    erb :"/restaurants/show"
+  end
+end

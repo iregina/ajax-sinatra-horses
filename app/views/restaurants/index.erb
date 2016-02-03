@@ -2,8 +2,8 @@
 
 <div id='restaurant-list'>
   <% @restaurants.each do |restaurant| %>
-    <div id="restaurant<%=restaurant.id%>">
-     <h3><a href="/restaurant/<%= restaurant.id%>"><%= restaurant.name %></a><div class="restaurantinfo"></div></h3>
+    <div id="restaurants<%=restaurant.id%>">
+     <h3><a href="/restaurants/<%= restaurant.id%>"><%= restaurant.name %></a><div class="restaurantinfo"></div></h3>
     </div>
   <% end %>
 </div>
