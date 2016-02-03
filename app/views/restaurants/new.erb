@@ -1,0 +1,31 @@
+<!-- <div id="restaurant-container"> -->
+  <h2>Add a new restaurant!</h2>
+
+  <div class="errors">
+    <% if @restaurant.errors %>
+      <% @restaurant.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    <% end %>
+  </div>
+
+  <form id="restaurant-form" method="post" action="/restaurants">
+
+    <label for="restaurant[name]">Name</label>
+    <input type="text" name="restaurant[name]" value="<%= @restaurant.name %>">
+
+    <label for="restaurant[name]">Location</label>
+    <input type="text" name="restaurant[location]" value="<%= @restaurant.location %>">
+
+    <label for="restaurant[name]">Cuisine</label>
+    <input type="text" name="restaurant[cuisine]" value="<%= @restaurant.cuisine %>">
+
+    <label for="restaurant[name]">Rating</label>
+    <input type="text" name="restaurant[rating]" value="<%= @restaurant.rating %>">
+    <br>
+    <br>
+    <input type="submit" value="CREATE">
+
+  </form>
+
+<!-- </div> -->

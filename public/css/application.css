@@ -1,0 +1,29 @@
+.container {
+  margin: 20px auto;
+  width: 800px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+  font-family: ;
+}
+
+.errors {
+  display: inline-block;
+  color: #33CCCC;
+}
+
+h2 {
+  text-align: center;
+}
+
+th {
+  text-align: left;
+}
+
+label {
+  /*float: left;*/
+  width: 4em;
+  display: block;
+  margin-left: 0em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
